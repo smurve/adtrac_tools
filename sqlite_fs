@@ -1,0 +1,1 @@
+rm -f db.sqlite3 && rmmigs && ./manage.py makemigrations && ./manage.py migrate && ./manage.py loaddata brokerage/fixtures/integration_test_data.json

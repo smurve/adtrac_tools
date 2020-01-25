@@ -1,0 +1,4 @@
+echo Removing existing migration files ...
+for file in $(find . -type f -name "0*.py" | grep /migrations/);
+  do echo deleting: "$file" && rm "$file";
+done

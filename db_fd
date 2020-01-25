@@ -1,0 +1,5 @@
+dropsql
+createsql
+rmmigs
+mmig
+./manage.py loaddata ../tools/initial_setup.json

@@ -1,0 +1,1 @@
+./manage.py dumpdata --all --indent 2 --exclude admin.logentry  --exclude=sessions > brokerage/fixtures/integration_test_data.json

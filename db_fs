@@ -1,0 +1,6 @@
+dropsql
+createsql
+rmmigs
+mmig
+createsu
+./manage.py resource_access

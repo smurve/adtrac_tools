@@ -1,0 +1,7 @@
+if [ "$DJANGO_SETTINGS_MODULE" = brokerage.settings.test ]
+then
+  echo Removing db.sqlite3 file
+  rm -f db.sqlite3
+else
+  psql -U postgres -h localhost -c "drop database \"brokerage-master-database\""
+fi
