@@ -1,5 +1,5 @@
 rm ./db.sqlite3
-./manage.py migrate
-./manage.py loaddata integration_test_data
-./manage.py resource_access
-./manage.py runserver
+ ./manage.py migrate
+ ./manage.py create_scenario
+ ./manage.py createsuperuser --email p@g.sql
+ ./manage.py runserver

@@ -93,6 +93,17 @@ class RestService:
         except requests.exceptions.RequestException as re:
             logger.warning("error: %s" % re.__str__())
 
+    def put(self, path, data=None, **kwargs):
+        self.refresh()
+        url = self._build_url(path, **kwargs)
+        try:
+            logger.debug("Calling %s", url)
+            response = requests.put(url, headers=self.headers, json=data)
+            response.raise_for_status()
+            return response
+        except requests.exceptions.RequestException as re:
+            logger.warning("error: %s" % re.__str__())
+
     def _build_url(self, path, **kwargs):
         path = "/".join([self.base_path, path.strip("/")]) + "/"
         url_parts = list(urllib.parse.urlparse(self.base_url))

@@ -1,4 +1,7 @@
+# source this from within your python repo folder
 export DJANGO_SETTINGS_MODULE=brokerage.settings.test
+export PROJECT_PATH=$PWD/..
 export PGPASSWORD=postgres
-export PATH=$PATH:/mnt/c/workspace/Adtrac/tools
-export GOOGLE_APPLICATION_CREDENTIALS=/mnt/c/workspace/Adtrac/secrets/GCS_Object_Access.json
+export PATH=$PATH:$PROJECT_PATH/tools
+export PYTHONPATH=$PWD:$PYTHONPATH
+export GOOGLE_APPLICATION_CREDENTIALS=$PROJECT_PATH/secrets/GCS_Object_Access.json
