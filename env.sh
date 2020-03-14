@@ -1,5 +1,5 @@
 # source this from within your python repo folder
-export DJANGO_SETTINGS_MODULE=brokerage.settings.test
+export DJANGO_SETTINGS_MODULE=brokerage.settings.unittest
 export PROJECT_PATH=$PWD/..
 export PGPASSWORD=postgres
 export PATH=$PATH:$PROJECT_PATH/tools
