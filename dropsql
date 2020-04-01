@@ -1,4 +1,4 @@
-if [ "$DJANGO_SETTINGS_MODULE" = brokerage.settings.test ]
+if [ "$DJANGO_SETTINGS_MODULE" = brokerage.settings.unittest ]
 then
   echo Removing db.sqlite3 file
   rm -f db.sqlite3

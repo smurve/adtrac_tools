@@ -1,4 +1,4 @@
-if [ "$DJANGO_SETTINGS_MODULE" = brokerage.settings.test ]
+if [ "$DJANGO_SETTINGS_MODULE" = brokerage.settings.unittest ]
 then
   echo "On test settings. Nothing to do here..."
 else
